@@ -7,6 +7,6 @@
       "declaration": true,
       "removeComments": false,
       "emitDeclarationOnly": true,
-      "outDir": "typings"
+      /*"outDir": "typings"*/
     }
   }

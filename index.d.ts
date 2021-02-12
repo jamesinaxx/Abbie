@@ -6,6 +6,6 @@
  *
  *
  * @param {string} message The message you would like to log
- * @param {number} level The level of log message (0 = info, 1 = error, 2 = good news)
+ * @param {number} level The level of log message, view types {@link https://github.com/jamesinaxx/Abbie/wiki/Reference here}
  */
 export function log(message: string, level?: number): void;
