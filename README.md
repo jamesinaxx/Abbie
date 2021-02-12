@@ -1,7 +1,7 @@
 # Abbie
 A simple, clean, javascript logger
 
-[![Screenshot](https://raw.githubusercontent.com/jamesinaxx/Abbie/public/assets/Screenshot.png)]()
+[![Screenshot](https://raw.githubusercontent.com/jamesinaxx/Abbie/1.1.4/assets/Screenshot.png)]()
 
 [![Build Status](https://travis-ci.com/jamesinaxx/Abbie.svg?branch=public)](https://travis-ci.com/jamesinaxx/Abbie)
 [![DeepScan grade](https://deepscan.io/api/teams/11350/projects/15794/branches/322083/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=11350&pid=15794&bid=322083) 
