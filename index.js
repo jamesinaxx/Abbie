@@ -6,7 +6,7 @@
  *
  *
  * @param {string} message The message you would like to log
- * @param {number} level The level of log message (0 = info, 1 = error, 2 = good news)
+ * @param {number} level The level of log message (0 = info, 1 = error, 2 = good news, 3 = warn, 4 = debug)
  */
 function log(message, level = 0) {
     const type = require('./lib/getName').getName(
