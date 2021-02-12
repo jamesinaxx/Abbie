@@ -1,5 +1,5 @@
 require('dotenv').config();
-import { log } from '../index';
+import { log } from '../main';
 
 log("Hey y'all wassup");
 
