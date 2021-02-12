@@ -1,8 +1,12 @@
 require('dotenv').config();
 const abbie = require('../index');
 
-abbie.log("Hey y'all wassup!");
+abbie.log("Hey y'all wassup");
 
-abbie.log('Oopsie I made a booboo and this is an error', 1);
+abbie.log('Oopsie i made a booboo and this is an error', 1);
 
-abbie.log('Finished Successfully!', 2);
+abbie.log("This is some good news!", 2);
+
+abbie.log('Something nearly failed...', 3);
+
+abbie.log('Uhh yeah', 4);

@@ -29,6 +29,14 @@ function log(message, level = 0) {
             message = chalk.green(message);
             lvl = chalk.green('Good ');
             break;
+        case 3:
+            message = chalk.yellow(message);
+            lvl = chalk.yellow('Warn ');
+            break;
+        case 4:
+            message = chalk.grey(message);
+            lvl = chalk.grey('Debug');
+            break;
         default:
             lvl = 'Info ';
             break;
