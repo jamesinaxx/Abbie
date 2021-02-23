@@ -10,7 +10,6 @@
  */
 function log(message, level = 0) {
     const debugBool = process.env.DEBUG == 'true';
-    console.log(debugBool);
 
     const type = require('./lib/getName').getName(
         require.main.filename.replace(
