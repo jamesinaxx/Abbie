@@ -10,6 +10,7 @@
  */
 function log(message, level = 0) {
     const debugBool = process.env.DEBUG == 'true';
+    console.log(debugBool);
 
     const type = require('./lib/getName').getName(
         require.main.filename.replace(
@@ -20,7 +21,7 @@ function log(message, level = 0) {
 
     const chalk = require('chalk');
 
-    let lvl = '';
+    let lvl = 'Info ';
 
     switch (level) {
         case 1:
@@ -35,7 +36,7 @@ function log(message, level = 0) {
             message = chalk.yellow(message);
             lvl = chalk.yellow('Warn ');
             break;
-        case 4 && debugBool:
+        case 4:
             message = chalk.grey(message);
             lvl = chalk.grey('Debug');
             break;
@@ -43,12 +44,13 @@ function log(message, level = 0) {
             lvl = 'Info ';
             break;
     }
-
-    console.log(
-        `${chalk.green(
-            require('./lib/time').time(),
-        )} | ${lvl} | ${chalk.cyanBright('[' + type + ']')} ${message}`,
-    );
+    if (!debugBool && lvl !== chalk.grey('Debug')) {
+        console.log(
+            `${chalk.green(
+                require('./lib/time').time(),
+            )} | ${lvl} | ${chalk.cyanBright('[' + type + ']')} ${message}`,
+        );
+    }
 }
 
 module.exports.log = log;
