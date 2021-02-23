@@ -43,13 +43,14 @@ function log(message, level = 0) {
             lvl = 'Info ';
             break;
     }
-    if (!debugBool && lvl !== chalk.grey('Debug')) {
-        console.log(
-            `${chalk.green(
-                require('./lib/time').time(),
-            )} | ${lvl} | ${chalk.cyanBright('[' + type + ']')} ${message}`,
-        );
+    if (!debugBool && lvl === chalk.grey('Debug')) {
+        return;
     }
+    console.log(
+        `${chalk.green(
+            require('./lib/time').time(),
+        )} | ${lvl} | ${chalk.cyanBright('[' + type + ']')} ${message}`,
+    );
 }
 
 module.exports.log = log;
