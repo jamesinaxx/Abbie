@@ -4,6 +4,9 @@ codecov:
 fixes:
     - 'index.js::./index.js'
     - 'lib/::./lib'
+    - 'lib/time.js'::./lib/time.js'
+    - 'lib/getName.js'::./getName.d.ts'
+    - 'lib/slash.js::./lib/slash.js'
 
 coverage:
     precision: 2
