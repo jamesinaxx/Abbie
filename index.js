@@ -9,6 +9,8 @@
  * @param {number} level The level of log message, view types {@link https://github.com/jamesinaxx/Abbie/wiki/Reference here}
  */
 function log(message, level = 0) {
+    const debugBool = process.env.DEBUG == 'true';
+
     const type = require('./lib/getName').getName(
         require.main.filename.replace(
             require('app-root-path').path + require('./lib/slash').slash(),
@@ -33,7 +35,7 @@ function log(message, level = 0) {
             message = chalk.yellow(message);
             lvl = chalk.yellow('Warn ');
             break;
-        case 4:
+        case 4 && debugBool:
             message = chalk.grey(message);
             lvl = chalk.grey('Debug');
             break;
