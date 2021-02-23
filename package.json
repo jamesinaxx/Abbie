@@ -1,6 +1,6 @@
 {
-    "name": "abbie-beta",
-    "version": "1.1.7-BETA.1",
+    "name": "abbie",
+    "version": "1.1.7",
     "description": "A simple, clean, javascript logger",
     "main": "main.js",
     "types": "./typings/",
