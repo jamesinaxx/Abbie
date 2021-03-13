@@ -52,4 +52,4 @@ function log(message, level = 0) {
     );
 }
 
-module.exports.log = log;
+console.log = log;

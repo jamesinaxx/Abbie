@@ -1,12 +1,14 @@
 require('dotenv').config();
-const abbie = require('..');
+require('..');
 
-abbie.log("Hey y'all wassup");
+console.log('HEYA');
 
-abbie.log('Oopsie i made a booboo and this is an error', 1);
+console.log("Hey y'all wassup");
 
-abbie.log('This is some good news!', 2);
+console.log('Oopsie i made a booboo and this is an error', 1);
 
-abbie.log('Something nearly failed...', 3);
+console.log('This is some good news!', 2);
 
-abbie.log('Uhh yeah', 4);
+console.log('Something nearly failed...', 3);
+
+console.log('Uhh yeah', 4);
